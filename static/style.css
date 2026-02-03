@@ -1,3 +1,76 @@
+html, body {
+    min-height: 100%;
+}
+
 p {
-    color:red;
+    color: #6b5b95; 
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #8d7bbd;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #a084ca;
+}
+
+body {
+    background-color: #faf7fc; 
+    text-align: center;
+    border-left: 40px solid #e6d9f2;
+    border-right: 40px solid #e6d9f2;
+    padding: 20px;
+}
+a {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #b583c7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    background-color: #f2ecfb;
+    border: 1px solid #d8cdee;
+    border-radius: 12px;
+    padding: 8px;
+}
+button {
+    background-color: #e9defa;
+    border: 1px solid #cbb8e6;
+    border-radius: 14px;
+    padding: 8px 14px;
+    cursor: pointer;
+    color: #5f4b8b;
+}
+button:hover {
+    background-color: #dccdf3;
+}
+.Notas {
+    position: fixed;
+    font-size: 1.8rem;
+    color: #d16ba5; 
+    animation: flutuar 2s infinite ease-in-out;
+    z-index: 1000;
+}
+
+.Notas.esquerda { left: 15px; top: 30%; }
+.Notas.direita { right: 15px; top: 45%; }
+
+@keyframes flutuar {
+    0% { opacity: 0.4; transform: translateY(0) scale(0.95); }
+    50% { opacity: 1; transform: translateY(-10px) scale(1.05); }
+    100% { opacity: 0.4; transform: translateY(0) scale(0.95); }
 }
