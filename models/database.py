@@ -18,6 +18,11 @@ def init_db(db_name: str = DB_PATH) -> None:
         );""")
 
 class Database:
+    """
+        Classe que gerencia conexoes e operações com um banco de dados
+        SQLite. Utiliza o protocolo de gerenciamento de contexto para garantir que 
+        a conexao seja encerrada corretamente.
+    """
     def __init__(self, db_name: str = DB_PATH) -> None:
         self.connection: Connection = connect(db_name)
         self.cursor: Cursor = self.connection.cursor()
